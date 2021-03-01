@@ -2,6 +2,8 @@ const express = require('express');
 const socketio = require('socket.io');
 const http = require('http');
 
+const { addUser, removeUser, getUser, getUsersInRoom } = require('./users');
+
 // deployment will require process.env.port
 const PORT = process.env.PORT || 5000;
 
